@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import ListPage from "./pages/ListPage";
+import PostForm from "./components/PostForm";
+import "./styles/reset.css";
+import "./styles/App.scss";
+import axios from "axios";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/update" component={PostForm} />
+        <Route path="/create" component={PostForm} />
+        <Route path="/" exact component={ListPage} />
+      </Switch>
     </div>
   );
 }
-
-export default App;

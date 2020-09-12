@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(249, 249, 249);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  & a {
+    color: #ffffff;
+  }
+}
+
+.App {
+  width: 1000px;
+  margin: 0 auto;
+}

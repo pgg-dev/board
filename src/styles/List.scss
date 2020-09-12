@@ -1,0 +1,18 @@
+.loginWrap {
+  margin-left: auto;
+
+  & button {
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.search {
+  align-self: flex-end;
+  margin: 20px 0;
+}
+.createBtn {
+  align-self: flex-end;
+  margin: 20px 0 !important;
+}
